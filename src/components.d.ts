@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppResults {
+        "apiKey": string;
+        "apiUrl": string;
     }
     interface AppRoot {
     }
@@ -40,6 +42,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppResults {
+        "apiKey"?: string;
+        "apiUrl"?: string;
     }
     interface AppRoot {
     }

@@ -1,28 +1,96 @@
 .app-search {
-  padding: 10px;
+  padding: 15px;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
+  max-width: 500px;
+  margin: auto;
+  font-family: sans-serif;
 }
 
-button {
-  background: #5851ff;
+.directions {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+}
+
+.searchTitles {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  width: calc(100% - 20px);
+  font-size: 14px;
+  border: #000080 2px solid;
+  padding: 8px;
+  border-radius: 0px;
+}
+
+.typeSelect {
+  width: 100%;
+  font-size: 14px;
+  border: #000080 2px solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 8px;
+  border-radius: 0px;
+  grid-area: 1/ 1/ span 1/ span 2;
+  background: none;
+}
+
+.expandArrow {
+  grid-area: 1/ 2/ span 1/ span 1;
+  margin: auto;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 2px;
+}
+
+.down {
+ transform: rotate(45deg);
+ -webkit-transform: rotate(45deg);
+}
+
+.selectGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+}
+
+.button {
+  background: #000080;
   color: white;
-  margin: 8px;
+  margin: auto;
   border: none;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 16px 20px;
+  padding: 16px 40px;
   border-radius: 2px;
   box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
   outline: 0;
   letter-spacing: .04em;
   transition: all .15s ease;
   cursor: pointer;
+  text-align: center;
 }
 
-button:hover {
+.button:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.1);
   transform: translateY(1px);
+}
+
+.requiredText {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
