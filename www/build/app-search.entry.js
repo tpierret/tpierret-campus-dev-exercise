@@ -29,7 +29,6 @@ const AppHome = class {
         }
     }
     checkForEnter(e) {
-        console.log(e.keyCode);
         if (e && e.keyCode && e.keyCode == 13) {
             this.search();
         }

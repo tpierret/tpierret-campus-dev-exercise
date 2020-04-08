@@ -87,6 +87,10 @@ export class AppResults {
     window.location.href = '/search?s=' + this.search + '&type=' + this.type
   }
 
+  goToPoster(link) {
+    window.location.href = link
+  }
+
   render() {
     return (
       <div class='app-results'>
@@ -114,7 +118,7 @@ export class AppResults {
                             <a href={"https://imdb.com/title/" + item.imdbID}>IMDB profile</a>
                           </div>
                           <div style={{display: (item.Poster == "N/A" ? 'none' : '')}}>
-                            <img class="poster" src={item.Poster}></img>
+                            <img onClick={() => this.goToPoster(item.Poster)} class="poster" src={item.Poster}></img>
                           </div>
                         </div>
                       )}
