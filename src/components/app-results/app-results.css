@@ -17,10 +17,6 @@
   padding: 20px 0;
 }
 
-.subTitle {
-  color: #000;
-  margin-bottom: 3px;
-}
 
 @media (max-width:600px) {
   .container {
